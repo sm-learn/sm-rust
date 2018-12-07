@@ -23,8 +23,7 @@ fn fizz_buzz(n : u32) -> () {
 fn is_divisible_by(numerator: u32, denominator: u32) -> bool {
     if denominator == 0 {
         return false;
-    }
-    
+    }   
     numerator % denominator == 0
 }
 
