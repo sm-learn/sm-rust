@@ -5,8 +5,7 @@
 
 
 fn main() {
-    let n = 6;
-    fizz_buzz(n);
+    generate_nums(1,101);
 }
 
 fn fizz_buzz(n : u32) -> () {
@@ -25,5 +24,12 @@ fn is_divisible_by(numerator: u32, denominator: u32) -> bool {
     if denominator == 0 {
         return false;
     }
+    
     numerator % denominator == 0
+}
+
+fn generate_nums(from: u32, to: u32) {
+    for n in from..to {
+        fizz_buzz(n);
+    }
 }
